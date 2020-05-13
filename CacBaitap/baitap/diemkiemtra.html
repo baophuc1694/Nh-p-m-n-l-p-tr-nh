@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kiemtra = parseInt(prompt("Nhập điểm kiểm tra"))
+    let thigiuaky = parseInt(prompt("Nhập điểm thi giữa kỳ"))
+    let thicuoiky = parseInt(prompt("Nhập điểm thi cuối kỳ"))
+    let greeting
+    let hocluc = (kiemtra+thigiuaky+thicuoiky)/3
+    document.write("Học lực của học sinh là: "+hocluc)
+    if (hocluc < 3.5){
+        greeting = "Học sinh đạt loại yếu"
+    }else if(hocluc < 5){
+        greeting = "Học sinh đạt loạt trung bình"
+    }else if(hocluc < 7){
+        greeting = "Học sinh đạt loại khá "
+    }else if (hocluc < 8.4){
+        greeting = "Học sinh đạt loại giỏi"
+    }else if (hocluc > 8.5){
+        greeting = "Học sinh đạt loại xuất sắc"
+    }alert(greeting)
+
+</script>
+</body>
+</html>
