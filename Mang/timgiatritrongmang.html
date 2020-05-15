@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let value = parseInt(prompt("Nhập số: "));
+    let x = [1, 2, 3, 4, 5, 5, 7, 8, 9];
+    let count="";
+    let giatri;
+    for (i=0;i<x.length;i++){
+        if (value==x[i]){
+            count+=i+"và";
+            giatri=x[i]+" ";
+        }
+    }
+    alert("vi trí trong mảng là:"+count+" "+" giá trị là: " + giatri)
+</script>
+</body>
+</html>

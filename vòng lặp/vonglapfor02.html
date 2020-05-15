@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhietdo = parseInt(prompt("Nhập nhiệt độ: "))
+while (true){
+    if (nhietdo<20){
+        alert("nhiet do nhap  vao qua thap")
+        nhietdo=parseInt(prompt("Nhập nhiệt độ: "))
+    }else if (nhietdo>100){
+        alert("ban nhap nhiet do qua cao")
+        nhietdo=parseInt(prompt("Nhập nhiệt độ: "))
+    }else{
+        alert("ban da nhap nhiet do thanh cong");
+        break;
+    }
+}
+</script>
+</body>
+</html>
