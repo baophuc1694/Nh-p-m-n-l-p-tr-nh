@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = "Chúng ta đã bị -8 điểm trong kỳ thi lần này và sẽ tiếp tục -5 điểm nếu thi k tôt,hãy thi tốt để lấy điểm 10 và giành thứ hạng 1";
+    let result = str.split(" ").reduce(function (total, e) {
+    return total + (parseInt(e) < 0);
+    }, 0);
+    document.write(result);
+</script>
+</body>
+</html>

@@ -10,7 +10,23 @@
     let vie = ["Xin Chào", "Tôi", "Bạn", "Chúng", "Chúng nó", "Với", "Sẽ"]
     let nhap = prompt("Nhập từ cần kiểm tra: ")
     let check = false;
-    let kiemtra = " ";chia
+    let kiemtra = " ";
+    for (i = 0; i < vie.length; i++) {
+        for (j = 0; j < eng.length; j++) {
+            if (nhap == vie[i]) {
+                kiemtra = eng[i]
+                check = true;
+                break;
+            } else if (nhap == eng[j]) {
+                kiemtra = vie[j];
+                check = true;
+                break;
+            }
+        }
+    }
+        if (check) {
+            alert(kiemtra);
+        } else alert("từ này không có trong từ điển, xin hãy nhập từ khác!")
 </script>
 </body>
 </html>

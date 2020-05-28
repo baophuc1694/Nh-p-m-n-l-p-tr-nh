@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    var a = new Array(),
+        n = "";
+    a[1] = 'B';
+    a[2] = 'Ạ';
+    a[3] = 'N';
+    a[4] = ' ';
+    a[5] = 'Đ';
+    a[6] = 'Ã';
+    a[7] = ' ';
+    a[8] = 'B';
+    a[9] = 'Ị';
+    a[10] = ' ';
+    a[11] = 'L';
+    a[12] = 'Ừ';
+    a[13] = 'A';
+    a[14] = '!';
+    a[15] = ' ';
+    a[16] = 'A';
+    a[17] = 'H';
+    a[18] = 'I';
+    a[19] = 'H';
+    a[20] = 'I';
+    a[21] = '!';
+    a[22] = '!';
+
+    function typeTextarea() {
+        t = document.f.txt.value;
+        j = t.length;
+        if (j > 0) {
+            for (var i = 1; i <= j; i++) {
+                n = n + a[i];
+                if (i == 22) {
+                    document.f.txt.value = "";
+                    n = "";
+                }
+            }
+        }
+        document.f.txt.value = n;
+        n = "";
+        setTimeout("typeTextarea()", 1);
+        //return false;
+    }
+    </script>
+<body>
+    <h2>Type anthing slowly</h2>
+    <form name="f">
+        <textarea name="txt" cols="40" rows="10" onkeydown="typeTextarea();"></textarea>
+
+</body>
+</html>
+a[1] = 'B';
+a[2] = 'Ạ';
+a[3] = 'N';
+a[4] = ' ';
+a[5] = 'Đ';
+a[6] = 'Ã';
+a[7] = ' ';
+a[8] = 'B';
+a[9] = 'Ị';
+a[10] = ' ';
+a[11] = 'L';
+a[12] = 'Ừ';
+a[13] = 'A';
+a[14] = '!';
+a[15] = ' ';
+a[16] = 'A';
+a[17] = 'H';
+a[18] = 'I';
+a[19] = 'H';
+a[20] = 'I';
+a[21] = '!';
+a[22] = '!';

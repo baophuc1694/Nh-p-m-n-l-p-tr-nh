@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function processConfirm() {
+        let result = "";
+        if (answer){
+            result = "xuất sắc";
+        }else{
+            result = "Có thể";
+        }
+        return result;
+
+    }
+    let confirmAnswer = confirm("OK bạn tui");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let a = parseInt(prompt("Nhập sô 1: "));
+    let b = parseInt(prompt("Nhập số 2: "));
+    let c = parseInt(prompt("Nhập số 3: "));
+    let arr =[a,b,c]
+    function travesonhonhat(arr) {
+        //let res=arr[0];
+        return  Math.min(...arr);
+        // for (let i =0; i < arr.length; i++){
+        //     if(res>arr[i])
+        //         res = arr[i]
+        // }
+        //return res;
+    }
+    alert(travesonhonhat(arr))
+</script>
+</body>
+</html>

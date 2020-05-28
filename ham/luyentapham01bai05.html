@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sao1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    let sao2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+    let nhap = prompt("Nhập từ cần kiểm tra: ")
+    let check = false;
+    let kiemtra = " ";
+    for (i = 0; i < sao1.length; i++) {
+        if (nhap == sao1[i]) {
+            kiemtra = sao2[i]
+            check = true;
+            break;
+        }
+
+    }
+    if (check) {
+        alert(kiemtra);
+    } else alert("Xin hãy nhập lại")
+</script>
+</body>
+</html>
